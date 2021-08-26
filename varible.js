@@ -23,4 +23,4 @@ console.log(age);
 age = 4;
 var age;
 
-// 3. constant`
+// 3. constant
