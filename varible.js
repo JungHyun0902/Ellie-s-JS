@@ -36,3 +36,7 @@ const maxNumber = 5;
 // object, box container
 // function, first-class function 
 
+const count = 17; //integer
+const size = 17.1; // decimal number
+console.log(`value: ${count}, type: ${typeof count}`);
+console.log(`value: ${size}, type: ${typeof size}`);
