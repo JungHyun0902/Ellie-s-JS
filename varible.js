@@ -74,6 +74,10 @@ console.log(`value: ${test}, type: ${typeof test}`);
 let nothing = null;
 console.log(`value: ${nothing}, type: ${typeof nothing}`);
 
-//undefined
+// undefined
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
+
+// symbol, create unique identifiers for objects
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id'); 
