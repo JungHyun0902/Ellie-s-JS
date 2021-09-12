@@ -87,6 +87,9 @@ const gSymbol2 = Symbol.for('id');
 console.log(gSymbol1 === gSymbol2); // true 
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
 
+//object, real-life object, data structure
+const ellie = {name: 'ellie', age: 20};
+
 // 5. Dynamic typing: dynamically typed language 
 let text = 'hello';
 console.log(text.charAt(0)); //h
