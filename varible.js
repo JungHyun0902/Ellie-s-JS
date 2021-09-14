@@ -3,7 +3,7 @@
 // use this for Vanilla Javascript
 'use strict';
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let(added in ES6)
 let globalName = 'global name';
 {
@@ -23,7 +23,7 @@ console.log(age);
 age = 4;
 var age;
 
-// 3. constant
+// 3. Constant, r(read only)
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety
@@ -89,6 +89,7 @@ console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
 
 //object, real-life object, data structure
 const ellie = {name: 'ellie', age: 20};
+ellie.age = 21;
 
 // 5. Dynamic typing: dynamically typed language 
 let text = 'hello';
