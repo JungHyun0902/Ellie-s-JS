@@ -47,6 +47,9 @@ const value2 = 4 < 2;
 // || (or)
 console.log(`or: ${vlaue1 || value2 || check()}`);
 
+// && (and), finds the first falsy value
+console.log(`and: ${vlaue1 && value2 && check()}`);
+
 function check() {
   for (let i = 0; i < 10; i++) {
     //wasting time
@@ -54,3 +57,4 @@ function check() {
   }
   return true;
 }
+
