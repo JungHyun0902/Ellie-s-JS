@@ -50,6 +50,9 @@ console.log(`or: ${vlaue1 || value2 || check()}`);
 // && (and), finds the first falsy value
 console.log(`and: ${vlaue1 && value2 && check()}`);
 
+// often used to compress long if-statement
+// nullableObject && nullableObject.something
+
 function check() {
   for (let i = 0; i < 10; i++) {
     //wasting time
