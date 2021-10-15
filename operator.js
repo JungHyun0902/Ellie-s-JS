@@ -66,3 +66,10 @@ function check() {
 
 // ! (not) 
 console.log(!value1);
+
+// 7. Equality
+const stringFive = '5';
+const numberFive = 5;
+
+// == lose equality, with type conversion
+
