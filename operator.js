@@ -72,4 +72,7 @@ const stringFive = '5';
 const numberFive = 5;
 
 // == lose equality, with type conversion
+console.log(stringFive == numberFive);
+console.log(stringFive != numberFive);
 
+// === strict equality, no type conversion
