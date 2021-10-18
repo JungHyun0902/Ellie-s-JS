@@ -76,3 +76,5 @@ console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
 
 // === strict equality, no type conversion
+console.log(stringFive === numberFive);
+console.log(stringFive !== numberFive);
