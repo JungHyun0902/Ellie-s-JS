@@ -94,3 +94,17 @@ console.log('' == false);
 console.log('' === false);
 console.log(null == undefined);
 console.log(null === undefined);
+
+// 8. Conditional operators: if
+// if, else if, else
+const name = 'coder';
+if (name === 'ellie') {
+  console.log('Welcome, Ellie!');
+} else if (name === 'coder') {
+  console.log('You are amazing coder');
+} else {
+  console.log('unknown');
+}
+
+// 9. Ternary operator: ?
+//condition ? value1 : value2;
