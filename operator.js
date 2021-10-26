@@ -133,3 +133,19 @@ switch (browser) {
     console.log('same all!');
     break;
 }
+
+// 11. Loops
+// while loop, while the condition is truthy,
+// body code is executed.
+let i = 3;
+while (i > 0) {
+  console.log(`while: ${i}`);
+  i--;
+}
+
+// do while loop, body code is executed first,
+// then check the condition.
+do {
+  console.log(`do while: ${i}`);
+  i--;
+} while (i > 0);
