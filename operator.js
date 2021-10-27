@@ -149,3 +149,9 @@ do {
   console.log(`do while: ${i}`);
   i--;
 } while (i > 0);
+
+// for loop, for(begin; condition; step)
+for (i = 3; i > 0; i = i-2) {
+  // inline variable declaration
+  console.log(`inline variable for: ${i}`);
+}
