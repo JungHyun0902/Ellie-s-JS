@@ -166,3 +166,8 @@ for (let i = 0; i < 10; i++) {
     console.log(`i: ${i}, j: ${j}`);
   }
 }
+
+// break, continue
+// Q1. iterate from 0 to 10 and print only even numbers(use continue)
+
+// Q2. iterate from 0 to 10 and print numbers until reaching 8 (use break)
