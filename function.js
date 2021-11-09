@@ -20,4 +20,14 @@ function log(message) {
   console.log(message);
 }
 log('Hello@');
+log(1234);
 
+// 2. Parameters
+// primitive parameters: passed by value
+// object parameters: passed by reference
+function changeName(obj) {
+  obj.name = 'coder';
+}
+const ellie = {name: 'ellie' };
+changeName(ellie);
+console.log(ellie);
