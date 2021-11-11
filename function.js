@@ -31,3 +31,10 @@ function changeName(obj) {
 const ellie = {name: 'ellie' };
 changeName(ellie);
 console.log(ellie);
+
+// 3. Default parameters (added in ES6)
+function showMessage(message, from) {
+  console.log(`${message} by ${from}`);
+}
+showMessage('Hi!');
+
