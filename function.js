@@ -34,7 +34,17 @@ console.log(ellie);
 
 // 3. Default parameters (added in ES6)
 function showMessage(message, from) {
+  if (from === undefined) {
+    from = 'unknown';
+  }
   console.log(`${message} by ${from}`);
 }
 showMessage('Hi!');
 
+// 4. Rest parameters (added in ES6)
+function printAll(...args) {
+  for (let i = 0; i< args.length; i++) {
+    console.log(args[i]);
+  }
+}
+printAll('dream', 'coding', 'ellie');
