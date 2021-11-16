@@ -63,3 +63,27 @@ function printMessage() {
   console.log(globalMessage);
 }
 printMessage();
+
+// 6. Return a value
+function sum(a, b) {
+  return a + b;
+}
+const result = sum(1, 2); // 3
+console.log(`sum: ${sum(1, 2)}`);
+
+//7. Early return, early exit
+
+// bad case
+function upgradeUser(user) {
+  if(user.point > 10) {
+    // long upgrade logic...
+  }
+}
+
+//good case
+function upgradeUser(user) {
+  if(user.point <= 10) {
+    return;
+  }
+  // long upgrade logic...
+}
