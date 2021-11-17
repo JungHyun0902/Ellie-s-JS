@@ -56,7 +56,7 @@ function printAll(...args) {
 printAll('dream', 'coding', 'ellie');
 
 // 5. Local scope
-let globalMessage = 'golobal'; // global variable
+let globalMessage = 'global'; // global variable
 function printMessage() {
   let message = 'hello';
   console.log(message); // local variable
@@ -80,10 +80,28 @@ function upgradeUser(user) {
   }
 }
 
-//good case
+// //good case
 function upgradeUser(user) {
   if(user.point <= 10) {
     return;
   }
   // long upgrade logic...
 }
+
+// First-class function
+// functions are treated like any other variable
+// can be assigned as a value to variable
+// can be passed as an argument to other functions.
+// can be returned by another function
+
+// 1. Function expression
+// a function declaration can be called earlier than it is defined. (hoisted)
+// a function expression is created when the execution reaches it. 
+const print = function () {
+  console.log('print');
+};
+print();
+const printAgain = print;
+printAgain();
+const sumAgain = sum;
+console.log(sumAgain(1, 3)); 
