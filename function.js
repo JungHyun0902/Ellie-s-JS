@@ -97,7 +97,8 @@ function upgradeUser(user) {
 // 1. Function expression
 // a function declaration can be called earlier than it is defined. (hoisted)
 // a function expression is created when the execution reaches it. 
-const print = function () {
+const print = function () { 
+  // anonymous function
   console.log('print');
 };
 print();
@@ -105,3 +106,21 @@ const printAgain = print;
 printAgain();
 const sumAgain = sum;
 console.log(sumAgain(1, 3)); 
+
+// 2. Callback function using function expression
+function randomQuiz(answer, printYes, printNo) {
+  if (answer === 'love you') {
+    printYes();
+  } else {
+    printNo();
+  }
+}
+const printYes = function () {
+  console.log('yes!');
+};
+
+const printNo = function print() {
+  console.log('no!');
+};
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
