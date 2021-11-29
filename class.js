@@ -65,4 +65,13 @@ class User {
 const user1 = new User('steve', 'jobs', -1);
 console.log(user1.age);
 
+// 3. Fields (public, private)
+// Too soon!
 
+class Experiment {
+  publicField = 2;
+  #privateField = 0;
+}
+const experiment = new Experiment();
+console.log(experiment.publicField);
+console.log(experiment.privateField);
