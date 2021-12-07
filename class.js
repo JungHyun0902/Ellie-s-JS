@@ -114,6 +114,10 @@ class Shape {
 
 class Rectangle extends Shape {}
 class Triangle extends Shape {
+  draw() {
+    super.draw();
+    console.log('▲');
+  }
   getArea() {
     return (this.width * this.height) / 2;
   }
@@ -124,3 +128,5 @@ rectangle.draw();
 const triangle = new Triangle(20, 20, 'red');
 triangle.draw();
 console.log(triangle.getArea());
+
+// 6. Class checking: instancedOf
