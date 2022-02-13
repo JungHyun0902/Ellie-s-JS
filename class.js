@@ -130,3 +130,8 @@ triangle.draw();
 console.log(triangle.getArea());
 
 // 6. Class checking: instancedOf
+console.log(rectangle instanceof Rectangle);
+console.log(triangle instanceof Rectangle);
+console.log(triangle instanceof Triangle);
+console.log(triangle instanceof Shape);
+console.log(triangle instanceof Object);
